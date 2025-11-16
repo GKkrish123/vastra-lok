@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
 import RelatedProducts from '../components/RelatedProducts';
+import { toast } from 'react-toastify';
 
 const Product = () => {
   const {productId} = useParams();
@@ -24,14 +25,11 @@ const Product = () => {
   // Create a seed number from productId (last 3 hex digits)
   const seed = parseInt(productId.slice(-3), 16);
 
-  // ⭐ Stable rating & reviews
-  const randomRating = Math.floor(seededRandom(seed) * 3) + 3; // 3–5 stars
-  const randomReviews = Math.floor(seededRandom(seed + 1) * 380) + 20; // 20–400 reviews
+  const randomRating = Math.floor(seededRandom(seed) * 3) + 3;
+  const randomReviews = Math.floor(seededRandom(seed + 1) * 380) + 20;
 
-  // ⭐ Create stars list
   const stars = Array.from({ length: 5 }, (_, i) => i < randomRating);
 
-  // ⭐ PRICE CALCULATION (Discount)
   const oldPrice = Math.round((productData?.price || 0) * 1.3);  
   const discountPercent = Math.round(((oldPrice - productData?.price) / oldPrice) * 100);
 
@@ -81,7 +79,6 @@ const Product = () => {
       <div className='flex-1'>
         <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
 
-        {/* ⭐ STABLE STARS + REVIEWS */}
         <div className='flex items-center gap-1 mt-2'>
           {stars.map((filled, i) => (
             <img
@@ -94,7 +91,6 @@ const Product = () => {
           <p className='pl-2'>({randomReviews})</p>
         </div>
 
-        {/* ⭐ PRICE + OLD PRICE + DISCOUNT */}
         <div className='mt-5 flex items-center gap-3'>
           <p className='text-3xl font-medium'>{currency}{productData.price}</p>
 
@@ -124,10 +120,14 @@ const Product = () => {
           </div>
         </div>
 
-        {/* ⭐ UPDATED BUTTON */}
+        {/* ⭐ UPDATED BUTTON WITH SIZE CHECK */}
         <button 
           onClick={()=>{
             if (!added) {
+              if (!size) {
+                toast.error("Please select a size");
+                return;
+              }
               addToCart(productData._id,size);
               setAdded(true);
             } else {
@@ -163,7 +163,6 @@ const Product = () => {
       </div>
    </div>
 
-   {/*-------------display related products---------- */}
    <RelatedProducts category={productData.category} subCategory={productData.subCategory}/>
 
     </div>
