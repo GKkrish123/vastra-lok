@@ -1,0 +1,22 @@
+import React from 'react'
+import Hero from '../components/Hero'
+import { AppleCarouselDemo } from '../components/AppleCarouselDemo'
+import LatestCollection from '../components/LatestCollection'
+import BestSeller from '../components/BestSeller'
+import OurPolicy from '../components/OurPolicy'
+import NewsletterBox from '../components/NewsletterBox'
+
+const Home = () => {
+  return (
+    <div>
+        <Hero />
+        <AppleCarouselDemo />
+        <LatestCollection />
+        <BestSeller />
+        <OurPolicy />
+        <NewsletterBox />
+      </div>
+  )
+}
+
+export default Home
