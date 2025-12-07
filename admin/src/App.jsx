@@ -11,7 +11,7 @@ import Login from './components/Login'
 import { useEffect } from 'react';
 
  // export const backendUrl = import.meta.env.VITE_BACKEND_URL
- export const backendUrl = 'http://localhost:4000'
+ export const backendUrl = 'https://vastra-lok-backend-rose.vercel.app'
  export const currency = '$'
 
 const App = () => {
