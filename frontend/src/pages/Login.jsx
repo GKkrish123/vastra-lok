@@ -88,7 +88,7 @@ const Login = () => {
         <p className='text-3xl font-semibold' style={{ fontFamily: "Poppins" }}>
           {currentState}
         </p>
-        <hr className='border-none h-[1.5px] w-8 bg-gray-800' />
+        {/* <hr className='border-none h-[1.5px] w-8 bg-gray-800' /> */}
       </div>
 
       {/* INPUTS */}
