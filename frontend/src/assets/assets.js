@@ -16,12 +16,12 @@ import cross_icon from './cross_icon.png'
 
 export const assets = {
     logo,
-    hero_img: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279563/hero_img_bdvea3.jpg",
-    img1: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279570/img1_tfjgut.jpg",
-    img2: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279578/img2_h1mogc.jpg",
-    img3: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279571/img3_hjiqx4.jpg",
-    img4: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279854/img4_s0dbs6.jpg",
-    img5: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279564/img5_lzmeoi.jpg",
+    hero_img: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765112067/Woman_in_Red_Dress_Unsplash_hs4rpk.jpg",
+    img1: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765112372/Wedding_Outfits_Pin_n9zzyv.jpg",
+    img2: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765114625/Exquisite_Banarasi_Sarees_for_Brides_jhkhxl.jpg",
+    img3: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765114814/Kanchipuram_Wedding_Saree_mq2els.jpg",
+    img4: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765114987/Ananthika_Sanilkumar_r3ix9e.jpg",
+    img5: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765115121/Saree_Designs_yelhzx.jpg",
     img6: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279572/img6_zl8nxn.jpg",
     img7: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279854/img7_bkddiq.jpg",
     img8: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279569/img8_ifdcvv.jpg",

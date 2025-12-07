@@ -36,7 +36,7 @@ const Contact = () => {
           <p className='font-semibold text-xl text-gray-600'>Careers at VastraLok</p>
 
           <p className='text-gray-500'>
-            Join our growing team and help us craft a better fashion experience.
+            Join our growing team and help us preserve India's rich saree heritage.
           </p>
 
           <button className='border border-black px-8 py-3 text-sm hover:bg-black hover:text-white transition-all duration-500'>

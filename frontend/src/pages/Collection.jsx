@@ -89,34 +89,38 @@ const Collection = () => {
 
         {/* CATEGORY */}
         <div className={`${showFilter ? '' : 'hidden'} sm:block border border-gray-200 rounded-lg p-4 mt-4`}>
-          <p className='mb-3 text-sm font-semibold'>CATEGORIES</p>
+          <p className='mb-3 text-sm font-semibold'>SAREE TYPE</p>
           
           <div className='flex flex-col gap-2 text-sm text-gray-700'>
             <label className='flex gap-2 items-center'>
-              <input className='w-3' type='checkbox' value={'Men'} onChange={toggleCategory}/> Men
+              <input className='w-3' type='checkbox' value={'Silk Sarees'} onChange={toggleCategory}/> Silk Sarees
             </label>
 
             <label className='flex gap-2 items-center'>
-              <input className='w-3' type='checkbox' value={'Women'} onChange={toggleCategory}/> Women
+              <input className='w-3' type='checkbox' value={'Cotton Sarees'} onChange={toggleCategory}/> Cotton Sarees
+            </label>
+
+            <label className='flex gap-2 items-center'>
+              <input className='w-3' type='checkbox' value={'Handloom Sarees'} onChange={toggleCategory}/> Handloom Sarees
             </label>
           </div>
         </div>
 
         {/* SUB CATEGORY */}
         <div className={`${showFilter ? '' : 'hidden'} sm:block border border-gray-200 rounded-lg p-4 mt-5`}>
-          <p className='mb-3 text-sm font-semibold'>TYPE</p>
+          <p className='mb-3 text-sm font-semibold'>OCCASION</p>
 
           <div className='flex flex-col gap-2 text-sm text-gray-700'>
             <label className='flex gap-2 items-center'>
-              <input className='w-3' type='checkbox' value={'Topwear'} onChange={toggleSubCategory}/> Topwear
+              <input className='w-3' type='checkbox' value={'Festive'} onChange={toggleSubCategory}/> Festive
             </label>
 
             <label className='flex gap-2 items-center'>
-              <input className='w-3' type='checkbox' value={'Bottomwear'} onChange={toggleSubCategory}/> Bottomwear
+              <input className='w-3' type='checkbox' value={'Casual'} onChange={toggleSubCategory}/> Casual
             </label>
 
             <label className='flex gap-2 items-center'>
-              <input className='w-3' type='checkbox' value={'Winterwear'} onChange={toggleSubCategory}/> Winterwear
+              <input className='w-3' type='checkbox' value={'Bridal'} onChange={toggleSubCategory}/> Bridal
             </label>
           </div>
         </div>
@@ -128,7 +132,7 @@ const Collection = () => {
 
         {/* Header: Title + Sort */}
         <div className='flex justify-between items-center mb-6'>
-          <Title text1={'ALL'} text2={'COLLECTION'} />
+          <Title text1={'SAREE'} text2={'COLLECTION'} />
 
           <select 
             onChange={(e)=>setSortType(e.target.value)} 

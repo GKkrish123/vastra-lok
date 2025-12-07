@@ -17,9 +17,9 @@ const LatestCollection = () => {
       
       {/* Section Title */}
       <div className='text-center py-6 text-3xl'>
-        <Title text1={'LATEST'} text2={'COLLECTIONS'} />
+        <Title text1={'LATEST'} text2={'SAREES'} />
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Explore the freshest trends curated just for you.
+          Explore our newest handloom saree collection, curated with love and tradition.
         </p>
       </div>
 

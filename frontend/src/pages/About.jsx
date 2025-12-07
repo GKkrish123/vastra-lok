@@ -23,27 +23,27 @@ const About = () => {
         <div className='flex flex-col justify-between gap-6 text-gray-600 md:h-full'>
 
           <p>
-            VastraLok is built on the belief that fashion should feel effortless.
-            We bring together modern trends and timeless Indian aesthetics to create
-            a shopping experience that feels personal, comfortable, and stylish.
-            Every collection is crafted with attention to detail, quality, and comfort —
-            because you deserve clothing that feels as good as it looks.
+            VastraLok is built on the belief that every saree tells a story.
+            We bring together traditional handloom craftsmanship and timeless Indian elegance
+            to create a shopping experience that celebrates heritage, grace, and artistry.
+            Every saree is crafted with attention to detail, quality weaving, and authentic fabric —
+            because you deserve to wear a piece of culture that feels as beautiful as it looks.
           </p>
 
           <p>
-            From everyday essentials to statement outfits, our goal is to make fashion
-            accessible without compromising on craftsmanship. We work closely with
-            trusted manufacturers and designers to ensure every product reflects
-            reliability, durability, and elegant design.
+            From classic silk sarees to contemporary handloom designs, our goal is to preserve
+            the art of saree weaving while making it accessible to modern women. We work closely with
+            trusted weavers and artisans across India to ensure every saree reflects
+            authenticity, durability, and timeless elegance.
           </p>
 
           <b className='text-gray-800'>Our Mission</b>
           <p>
-            At VastraLok, our mission is to blend tradition with trend — offering
-            quality apparel that celebrates both comfort and culture. We aim to make online
-            shopping seamless and enjoyable through carefully curated collections,
+            At VastraLok, our mission is to celebrate India's rich saree heritage — offering
+            authentic handloom sarees that honor both tradition and elegance. We aim to make online
+            saree shopping seamless and enjoyable through carefully curated collections,
             transparent pricing, and exceptional customer support. Your trust inspires
-            us to keep improving and delivering outfits you’ll love wearing.
+            us to keep preserving this beautiful art form and delivering sarees you'll cherish wearing.
           </p>
 
         </div>
@@ -53,11 +53,11 @@ const About = () => {
       </div>
       <div className='flex flex-col md:flex-row text-sm mb-20'>
         <div className='border px-10 md:px-16 py-8 sm:py20 flex flex-col gap-5'>
-          <b>Quality Assurance:</b>
+          <b>Authentic Handloom Quality:</b>
           <p className='text-gray-600'>
-            Every product goes through strict quality checks to ensure fabric comfort,
-            stitching durability, and long-lasting color. We believe good clothing
-            starts with good quality.
+            Every saree goes through strict quality checks to ensure authentic fabric,
+            traditional weaving techniques, and vibrant, long-lasting colors. We believe
+            genuine handloom sarees reflect true craftsmanship and heritage.
           </p>
 
         </div>
@@ -65,15 +65,16 @@ const About = () => {
           <b>Convenience:</b>
           <p className='text-gray-600'>
             Shop anytime, anywhere. With an easy-to-navigate store and smooth delivery
-            experience, VastraLok brings premium fashion right to your doorstep.
+            experience, VastraLok brings exquisite handloom sarees right to your doorstep.
           </p>
 
         </div>
         <div className='border px-10 md:px-16 py-8 sm:py20 flex flex-col gap-5'>
           <b>Exceptional Customer Service:</b>
           <p className='text-gray-600'>
-            Our support team is always ready to help you with sizing, orders, returns,
-            and queries. We want your shopping journey to be as smooth as your outfit.
+            Our support team is always ready to help you with saree selection, care instructions,
+            orders, returns, and queries. We want your saree shopping journey to be as elegant
+            as the drape itself.
           </p>
         </div>
       </div>

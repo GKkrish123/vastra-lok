@@ -17,11 +17,11 @@ const HeroCarousel = () => {
                       text-white max-w-[80%] sm:max-w-[45%] space-y-4 z-10">
 
         <h2 className="font-medium text-base sm:text-lg tracking-wide">
-          EXCLUSIVE COLLECTION
+          HANDLOOM SAREE COLLECTION
         </h2>
 
         <h1 className="prata-regular text-3xl sm:text-5xl lg:text-6xl leading-snug">
-          Discover Indian Elegance
+          Timeless Saree Elegance
         </h1>
 
         <Link 

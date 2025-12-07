@@ -136,8 +136,8 @@ const Product = () => {
         <hr className='mt-8 sm:w-4/5' />
 
         <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
-          <p>100% Original product.</p>
-          <p>Cash on delivery is available on this product.</p>
+          <p>100% Authentic handloom saree.</p>
+          <p>Cash on delivery is available on this saree.</p>
           <p>Easy return and exchange policy within 7 days.</p>
         </div>
 
@@ -151,8 +151,8 @@ const Product = () => {
       </div>
 
       <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-        <p>Discover the latest trends and unbeatable deals all in one place.</p>
-        <p>Shop your favorites and get them delivered to your doorstep.</p>
+        <p>Discover exquisite handloom sarees crafted by skilled artisans, celebrating India's rich textile heritage.</p>
+        <p>Each saree is a work of art with authentic weaving techniques and premium quality fabric.</p>
       </div>
    </div>
 

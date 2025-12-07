@@ -10,8 +10,8 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className='mb-5 w-32' />
           <p className='w-full md:w-2/3 text-gray-600'>
-            VastraLok — where tradition meets trend. 
-            Discover the perfect blend of modern style and desi elegance, crafted for every moment.
+            VastraLok — celebrating India's saree heritage. 
+            Discover authentic handloom sarees that blend tradition with timeless elegance, woven for every special moment.
           </p>
         </div>
 

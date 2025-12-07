@@ -13,10 +13,10 @@
 </p>
 
 
-<h1 align="center">🛍️ VASTRA LOK — Modern Clothing E-Commerce Web App</h1>
+<h1 align="center">🛍️ VASTRA LOK — Handloom Saree E-Commerce Web App</h1>
 
 <p align="center">
-A fully responsive, fast and modern clothing e-commerce application built using the MERN stack & Cloudinary.  
+A fully responsive, fast and modern handloom saree e-commerce application built using the MERN stack & Cloudinary.  
 </p>
 
 ---
@@ -29,15 +29,15 @@ A fully responsive, fast and modern clothing e-commerce application built using 
 
 ## 🧩 Features
 
-- 🏷️ Product browsing (men, women, kids categories)  
-- 🔍 Advanced search & filtering  
+- 🏷️ Browse authentic handloom sarees (silk, cotton, festive, casual, bridal)  
+- 🔍 Advanced search & filtering by saree type and occasion  
 - 🛒 Add to cart / Remove from cart  
 - 💳 Stripe & Razorpay payment integration  
 - 💨 Lightning-fast Cloudinary images  
 - 👤 User authentication (JWT)  
 - 🔐 Protected routes  
 - 📦 Order tracking  
-- 🛠️ Admin dashboard (add/edit products & orders)
+- 🛠️ Admin dashboard (add/edit sarees & orders)
 
 ---
 ## 🛠️ Tech Stack
@@ -86,7 +86,7 @@ A fully responsive, fast and modern clothing e-commerce application built using 
 
 ---
 
-### 🧥 Product Page
+### 🧥 Saree Detail Page
 <img src="https://res.cloudinary.com/dqumagamd/image/upload/v1763280835/product_page_s2w7rd.png" />
 
 ---
