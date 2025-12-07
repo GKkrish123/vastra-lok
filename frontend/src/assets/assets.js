@@ -26,7 +26,7 @@ export const assets = {
     img7: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279854/img7_bkddiq.jpg",
     img8: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279569/img8_ifdcvv.jpg",
 
-    about_img: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279854/about_img_cdhi1b.jpg",
+    about_img: "https://res.cloudinary.com/dpxr6dydh/image/upload/v1765117256/Pure_Kanchipuram_Silk_Saree__What_s_app___https___wa_me_message_5ABPBOYTD4DLF1__Our_sarees_are_made_from_the_finest_quality_silk_in_Tamilnadu_India..._and_choose_your_favorite_saree_from_this_collection.._A_classic_and_e_tc97j3.jpg",
     contact_img: "https://res.cloudinary.com/dqumagamd/image/upload/v1763279558/contact_img_yigx4f.jpg",
     
     cart_icon,
