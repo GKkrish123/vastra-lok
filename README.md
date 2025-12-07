@@ -1,7 +1,7 @@
 <p align="center">
   <img 
     src="https://res.cloudinary.com/dqumagamd/image/upload/v1763282199/VastraLok_logo_1_nmqwym.png" 
-    alt="Vastra Lok Logo" 
+    alt="SRM Handloom Weavers Logo" 
     width="160"
     style="
       background:#ffffff; 
@@ -13,7 +13,7 @@
 </p>
 
 
-<h1 align="center">🛍️ VASTRA LOK — Handloom Saree E-Commerce Web App</h1>
+<h1 align="center">🛍️ SRM Handloom Weavers — Handloom Saree E-Commerce Web App</h1>
 
 <p align="center">
 A fully responsive, fast and modern handloom saree e-commerce application built using the MERN stack & Cloudinary.  
@@ -23,7 +23,7 @@ A fully responsive, fast and modern handloom saree e-commerce application built 
 
 ## 🚀 Live Demo
 
-👉 **Frontend:** https://vastralok.vercel.app/
+👉 **Frontend:** https://vastralok.vercel.app/ (currently deployed as vastralok)
 
 ---
 

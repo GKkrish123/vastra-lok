@@ -239,7 +239,7 @@ const PlaceOrder = () => {
 
           {/* Small help text */}
           <div className='text-xs text-gray-500'>
-            <p>Need help? Contact our support at <span className='text-gray-700'>support@vastralok.com</span>.</p>
+            <p>Need help? Contact our support at <span className='text-gray-700'>srmhandloomweavers@gmail.com</span>.</p>
           </div>
 
         </div>

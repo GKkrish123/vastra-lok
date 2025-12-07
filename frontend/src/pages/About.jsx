@@ -23,7 +23,7 @@ const About = () => {
         <div className='flex flex-col justify-between gap-6 text-gray-600 md:h-full'>
 
           <p>
-            VastraLok is built on the belief that every saree tells a story.
+            SRM Handloom Weavers is built on the belief that every saree tells a story.
             We bring together traditional handloom craftsmanship and timeless Indian elegance
             to create a shopping experience that celebrates heritage, grace, and artistry.
             Every saree is crafted with attention to detail, quality weaving, and authentic fabric —
@@ -39,7 +39,7 @@ const About = () => {
 
           <b className='text-gray-800'>Our Mission</b>
           <p>
-            At VastraLok, our mission is to celebrate India's rich saree heritage — offering
+            At SRM Handloom Weavers, our mission is to celebrate India's rich saree heritage — offering
             authentic handloom sarees that honor both tradition and elegance. We aim to make online
             saree shopping seamless and enjoyable through carefully curated collections,
             transparent pricing, and exceptional customer support. Your trust inspires
@@ -65,7 +65,7 @@ const About = () => {
           <b>Convenience:</b>
           <p className='text-gray-600'>
             Shop anytime, anywhere. With an easy-to-navigate store and smooth delivery
-            experience, VastraLok brings exquisite handloom sarees right to your doorstep.
+            experience, SRM Handloom Weavers brings exquisite handloom sarees right to your doorstep.
           </p>
 
         </div>

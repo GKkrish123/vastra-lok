@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/">
-        <img src={assets.logo} className="w-24 sm:w-36" alt="" />
+        <img src={assets.logo} className="w-16 sm:w-24 rounded-xl" alt="" />
       </Link>
 
       {/* DESKTOP MENU */}

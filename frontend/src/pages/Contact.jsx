@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import NewsletterBox from '../components/NewsletterBox'
+import { InstagramIcon } from 'lucide-react'
 
 const Contact = () => {
   return (
@@ -24,16 +25,19 @@ const Contact = () => {
 
           {/* Updated Indian Address */}
           <p className='text-gray-500'>
-            Awalkhera, Agra <br />
-            Uttar Pradesh, India – 283201
+            NO. 14/31, <br />
+            Ennaikara Street(Opp to Jain Temple) <br />
+            Kanchipuram <br />
+            Tamil Nadu, India – 631502
           </p>
 
           <p className='text-gray-500'>
-            Tel: +91 9876543210 <br />
-            Email: support@vastralok.com
+            Tel: +91 9500458909 / +91 9500458979 <br />
+            Email: srmhandloomweavers@gmail.com
+            <a href="https://www.instagram.com/srm_weavers" className='flex items-center gap-2' target="_blank" rel="noopener noreferrer"><InstagramIcon className='w-5 h-5' /> @srm_weavers</a>
           </p>
 
-          <p className='font-semibold text-xl text-gray-600'>Careers at VastraLok</p>
+          {/* <p className='font-semibold text-xl text-gray-600'>Careers at SRM Handloom Weavers</p>
 
           <p className='text-gray-500'>
             Join our growing team and help us preserve India's rich saree heritage.
@@ -41,7 +45,7 @@ const Contact = () => {
 
           <button className='border border-black px-8 py-3 text-sm hover:bg-black hover:text-white transition-all duration-500'>
             Explore Jobs
-          </button>
+          </button> */}
         </div>
       </div>
 
