@@ -1,104 +1,130 @@
-import React, { useState, useContext } from 'react'
-import { assets } from '../assets/assets'
-import { Link, NavLink } from 'react-router-dom'
-import { ShopContext } from '../context/ShopContext';
+import React, { useState, useContext } from "react";
+import { assets } from "../assets/assets";
+import { Link, NavLink } from "react-router-dom";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
-
   const [menuVisible, setMenuVisible] = useState(false);
 
   const [profileOpen, setProfileOpen] = useState(false);
 
-
-  const { setShowSearch, getCartCount, navigate, token, setToken, setCartItems } = useContext(ShopContext);
-
+  const {
+    setShowSearch,
+    getCartCount,
+    navigate,
+    token,
+    setToken,
+    setCartItems,
+  } = useContext(ShopContext);
 
   const logout = () => {
-    navigate('/login')
-    localStorage.removeItem('token')
-    setToken('')
-    setCartItems({})
-  }
+    navigate("/login");
+    localStorage.removeItem("token");
+    setToken("");
+    setCartItems({});
+  };
 
   return (
-    <div className='flex items-center justify-between py-5 font-medium'>
-      <Link to='/'>
-        <img src={assets.logo} className='w-24 sm:w-36' alt="" />
+    <div className="flex items-center justify-between py-5 font-medium">
+      <Link to="/">
+        <img src={assets.logo} className="w-24 sm:w-36" alt="" />
       </Link>
 
       {/* DESKTOP MENU */}
-      <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
-
+      <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink
-          to='/'
+          to="/"
           className={({ isActive }) =>
-            `group flex flex-col items-center gap-1 ${isActive ? "text-black" : ""}`
+            `group flex flex-col items-center gap-1 ${
+              isActive ? "text-black" : ""
+            }`
           }
         >
           <p>HOME</p>
-          <hr className={
-            "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 " +
-            "origin-left " +
-            "group-hover:scale-x-100 " +
-            (location.pathname === "/" ? "scale-x-100" : "scale-x-0")
-          } />
+          <hr
+            className={
+              "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 " +
+              "origin-left " +
+              "group-hover:scale-x-100 " +
+              (location.pathname === "/" ? "scale-x-100" : "scale-x-0")
+            }
+          />
         </NavLink>
 
         <NavLink
-          to='/collection'
+          to="/collection"
           className={({ isActive }) =>
-            `group flex flex-col items-center gap-1 ${isActive ? "text-black" : ""}`
+            `group flex flex-col items-center gap-1 ${
+              isActive ? "text-black" : ""
+            }`
           }
         >
           <p>COLLECTION</p>
-          <hr className={
-            "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
-            "group-hover:scale-x-100 " +
-            (location.pathname === "/collection" ? "scale-x-100" : "scale-x-0")
-          } />
+          <hr
+            className={
+              "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
+              "group-hover:scale-x-100 " +
+              (location.pathname === "/collection"
+                ? "scale-x-100"
+                : "scale-x-0")
+            }
+          />
         </NavLink>
 
         <NavLink
-          to='/about'
+          to="/about"
           className={({ isActive }) =>
-            `group flex flex-col items-center gap-1 ${isActive ? "text-black" : ""}`
+            `group flex flex-col items-center gap-1 ${
+              isActive ? "text-black" : ""
+            }`
           }
         >
           <p>ABOUT</p>
-          <hr className={
-            "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
-            "group-hover:scale-x-100 " +
-            (location.pathname === "/about" ? "scale-x-100" : "scale-x-0")
-          } />
+          <hr
+            className={
+              "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
+              "group-hover:scale-x-100 " +
+              (location.pathname === "/about" ? "scale-x-100" : "scale-x-0")
+            }
+          />
         </NavLink>
 
         <NavLink
-          to='/contact'
+          to="/contact"
           className={({ isActive }) =>
-            `group flex flex-col items-center gap-1 ${isActive ? "text-black" : ""}`
+            `group flex flex-col items-center gap-1 ${
+              isActive ? "text-black" : ""
+            }`
           }
         >
           <p>CONTACT</p>
-          <hr className={
-            "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
-            "group-hover:scale-x-100 " +
-            (location.pathname === "/contact" ? "scale-x-100" : "scale-x-0")
-          } />
+          <hr
+            className={
+              "w-full h-[2px] bg-[#F2A23C] transition-transform duration-300 origin-left " +
+              "group-hover:scale-x-100 " +
+              (location.pathname === "/contact" ? "scale-x-100" : "scale-x-0")
+            }
+          />
         </NavLink>
-
       </ul>
 
       {/* RIGHT SIDE ICONS */}
-      <div className='flex items-center gap-6'>
-
-        <img onClick={() => setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
+      <div className="flex items-center gap-6">
+        {location.pathname.includes("collection") ? (
+          <img
+            onClick={() => setShowSearch(true)}
+            src={assets.search_icon}
+            className="w-5 cursor-pointer"
+            alt=""
+          />
+        ) : null}
 
         {/* PROFILE ICON + DROPDOWN */}
         <div className="relative z-50">
           <img
             onClick={() => {
-              if (!token) return navigate('/login');
-              setProfileOpen(prev => !prev); // toggle dropdown ONLY for profile
+              if (!token) return navigate("/login");
+              setProfileOpen((prev) => !prev); // toggle dropdown ONLY for profile
             }}
             className="w-5 cursor-pointer"
             src={assets.profile_icon}
@@ -113,14 +139,15 @@ const Navbar = () => {
         sm:group-hover:block
       `}
             >
-              <div className="flex flex-col gap-2 w-44 py-4 px-4 
+              <div
+                className="flex flex-col gap-2 w-44 py-4 px-4 
                       bg-white border border-gray-200 
                       rounded-xl shadow-lg shadow-black/10 
-                      animate-fadeIn">
-
+                      animate-fadeIn"
+              >
                 <p
                   onClick={() => {
-                    navigate('/cart');
+                    navigate("/cart");
                     setProfileOpen(false);
                   }}
                   className="cursor-pointer text-gray-700 hover:text-black 
@@ -131,7 +158,7 @@ const Navbar = () => {
 
                 <p
                   onClick={() => {
-                    navigate('/orders');
+                    navigate("/orders");
                     setProfileOpen(false);
                   }}
                   className="cursor-pointer text-gray-700 hover:text-black 
@@ -155,18 +182,21 @@ const Navbar = () => {
           )}
         </div>
 
-
-
         {/* CART */}
-        <Link to='/cart' className='relative'>
-          <img src={assets.cart_icon} className='w-5 min-w-5' alt="" />
-          <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>
+        <Link to="/cart" className="relative">
+          <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />
+          <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">
             {getCartCount()}
           </p>
         </Link>
 
         {/* MOBILE MENU ICON */}
-        <img onClick={() => setMenuVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+        <img
+          onClick={() => setMenuVisible(true)}
+          src={assets.menu_icon}
+          className="w-5 cursor-pointer sm:hidden"
+          alt=""
+        />
 
         {/* MOBILE SIDEBAR + OVERLAY */}
         {/* Overlay */}
@@ -231,11 +261,9 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
